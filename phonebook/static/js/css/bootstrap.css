@@ -2921,6 +2921,12 @@ fieldset:disabled a.btn {
   border-color: #28a745;
 }
 
+.btn-admin {
+  float: right;
+
+}
+
+
 .btn-outline-success:hover {
   color: #fff;
   background-color: #28a745;
