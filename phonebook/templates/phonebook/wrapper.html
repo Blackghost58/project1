@@ -11,17 +11,20 @@
   </head>
 
 <body>
-
+  <div class="container">
+    <h2>Телефонный справочник</h2>
+    <p>
+        <a href="/phonebook/" class="btn btn-success btn-lg">Главная страница</a>
+        <a href="/abonent/" class="btn btn-warning btn-lg">Абоненты</a>
+        <a href="/phonebook/contact" class="btn btn-info btn-lg">Контакты</a>
+        <a href="/phonebook/adm" class="btn btn-admin"><img src={% static 'phonebook/image/admin.png'  %} width="40px"></a>
+    </p>
+  </div>
   <div class="jumbotron">
     <div class="container">
-      <h1>Телефонный справочник</h1>
-        {% block content  %}
-        {% endblock %}
-      <p>
-          <a href="/phonebook/" class="btn btn-success btn-lg">Главная страница</a>
-          <a href="/abonent/" class="btn btn-ptimary btn-lg">Абоненты &raquo;</a>
-          <a href="/phonebook/contact" class="btn btn-info btn-lg">Контакты &raquo;</a>
-        </p>
+
+      {% block content  %}
+      {% endblock %}
       </div>
     </div>
     <div class="container">
