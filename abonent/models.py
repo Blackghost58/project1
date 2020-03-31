@@ -5,8 +5,8 @@ class Abonent(models.Model):
     Surname=models.CharField(max_length=30)
     Secondname=models.CharField(max_length=30)
     Rank=models.CharField(max_length=30)
-    Tel=models.CharField(max_length=30)
-    Ip_tel=models.CharField(max_length=30)
+    Tel=models.IntegerField(max_length=8)
+    Ip_tel=models.IntegerField(max_length=8)
 
     def __str__(self):
         return self.Name
